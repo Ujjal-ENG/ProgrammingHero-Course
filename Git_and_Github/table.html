@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    table td,
+    th {
+      border: 1px solid red;
+      padding: 20px;
+      font-weight: 600;
+    }
+
+    table th {
+      font-size: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav li ul#hoverlink {
+      display: none;
+    }
+
+    nav ul li #hoverlink {
+      transition: all 0.5s;
+    }
+
+
+
+    nav ul li:hover #hoverlink {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 1rem;
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: antiquewhite;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2 title="this is the first tooltip">My Salary Sheet</h2>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="./form.html">Form</a></li>
+        <li><a href="./index.html">Kop Mama</a></li>
+        <li>HoverLink
+          <ul id="hoverlink">
+            <li><a href="">Home</a></li>
+            <li><a href="./form.html">Form</a></li>
+            <li><a href="./index.html">Kop Mama</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <table>
+    <thead>
+      <th>No.</th>
+      <th>Full Name</th>
+      <th>Position</th>
+      <th>Salary</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Bill Gates</td>
+        <td>Founder of Microsoft</td>
+        <td>$10000</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Bill Gates</td>
+        <td>Founder of Microsoft</td>
+        <td>$10000</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Bill Gates</td>
+        <td>Founder of Microsoft</td>
+        <td>$10000</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Bill Gates</td>
+        <td>Founder of Microsoft</td>
+        <td>$10000</td>
+      </tr>
+    </tbody>
+  </table>
+  <img src="./download.png" alt="" srcset="">
+  <article>
+    <div class="addblog">
+      <h3>Mama new Blog is here.. Yes new blog is comming soon...</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, accusamus nihil libero eum dolores possimus,
+        incidunt sapiente eligendi veritatis voluptas blanditiis id voluptates mollitia iste delectus asperiores
+        quibusdam eos autem reprehenderit sit animi eaque est. Possimus voluptas quos debitis maiores.</p>
+    </div>
+    <div class="addblog">
+      <h3>Mama new Blog is here</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, accusamus nihil libero eum dolores possimus,
+        incidunt sapiente eligendi veritatis voluptas blanditiis id voluptates mollitia iste delectus asperiores
+        quibusdam eos autem reprehenderit sit animi eaque est. Possimus voluptas quos debitis maiores.</p>
+    </div>
+    <div class="addblog">
+      <h3>Mama new Blog is here</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, accusamus nihil libero eum dolores possimus,
+        incidunt sapiente eligendi veritatis voluptas blanditiis id voluptates mollitia iste delectus asperiores
+        quibusdam eos autem reprehenderit sit animi eaque est. Possimus voluptas quos debitis maiores.</p>
+    </div>
+  </article>
+</body>
+
+</html>
